@@ -10,15 +10,20 @@
     "astro": "astro"
   },
   "devDependencies": {
+    "@astrojs/cloudflare": "^1.0.1",
     "@astrojs/image": "^0.3.4",
     "@astrojs/preact": "^1.0.2",
     "@astrojs/prefetch": "^0.0.7",
     "@astrojs/tailwind": "^1.0.0",
+    "@types/react": "^18.0.17",
     "astro": "^1.0.6",
+    "astro-firebase": "^0.0.3",
     "preact": "^10.6.5"
   },
   "dependencies": {
     "@astrojs/vercel": "^1.0.0",
-    "airtable": "^0.11.4"
+    "@nanostores/preact": "^0.2.1",
+    "airtable": "^0.11.4",
+    "nanostores": "^0.6.0"
   }
 }

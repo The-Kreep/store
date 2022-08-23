@@ -2,6 +2,13 @@
 dist/
 .output/
 .vercel/
+functions/
+
+# firebase
+.firebaserc
+firebase.json
+firestore.indexes.json
+*.rules
 
 # dependencies
 node_modules/
