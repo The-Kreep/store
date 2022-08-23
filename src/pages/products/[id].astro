@@ -1,0 +1,23 @@
+---
+import { base } from 'airtableConfig'
+import Layout from 'src/layouts/Layout.astro'
+import type { Product } from 'src/types'
+
+const {id} = Astro.params
+
+let error
+
+if (!id) return error = 'No id provided'
+
+const product = await base<Product>('Products').find(id.toString())
+---
+
+<Layout title={product.get("name")}>
+
+  <main>
+
+    <h2>{product.get("description")}</h2>
+
+  </main>
+
+</Layout>
