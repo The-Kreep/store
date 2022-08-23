@@ -1,7 +1,7 @@
-import Airtable from 'airtable';
+import Airtable from 'airtable'
 
-const base = new Airtable({ apiKey: 'keymk3LV5DKTug2po' }).base(
-  'appIltlPG75O4D1jz'
-);
+const base = new Airtable({ apiKey: import.meta.env.AIRTABLE_API_KEY }).base(
+  import.meta.env.AIRTABLE_BASE_ID
+)
 
-export { base };
+export { base }
