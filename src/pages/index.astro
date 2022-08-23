@@ -1,17 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import { base } from 'airtableConfig';
+// import { base } from 'airtableConfig';
 import type { Product } from 'src/types'
 
-const products = await base<Product>('Products').select().all()
+// const products = await base<Product>('Products').select().all()
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		{products.map(product => (
+		<!-- {products.map(product => (
 			<a href={`/products/${product.getId()}`}>{product.get("name")}</a>
-		))}
+		))} -->
+		<h1>Home</h1>
 	</main>
 </Layout>
 

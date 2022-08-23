@@ -1,5 +1,5 @@
 ---
-import { base } from 'airtableConfig'
+// import { base } from 'airtableConfig'
 import Layout from 'src/layouts/Layout.astro'
 import type { Product } from 'src/types'
 
@@ -9,14 +9,14 @@ let error
 
 if (!id) return error = 'No id provided'
 
-const product = await base<Product>('Products').find(id.toString())
+// const product = await base<Product>('Products').find(id.toString())
 ---
 
-<Layout title={product.get("name")}>
+<Layout title="produit">
 
   <main>
 
-    <h2>{product.get("description")}</h2>
+    <h2>Produit</h2>
 
   </main>
 
